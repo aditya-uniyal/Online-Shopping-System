@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+<head>
+
+	<meta charset= "utf-8">
+	<title>Team Section</title>
+	<link rel= "stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+
+	<div class = "Team-Section">
+		<h1>Our Team</h1>
+
+		<div class="ps">
+			<a href = "#1"><img src  = {% static 'img/1.jpg' %} alt=""></a>
+			<a href = "#4"><img src  = {% static 'img/4.jpg' %} alt=""></a>
+
+		</div>
+
+		<div class= "section" id="1">
+			<span class = "name">Mayank Khali</span>
+			<span class ="border"></span>
+			 <li> Computer Science Student</li>
+				<li> Web Designer</li>
+				<li>E-mail-mayankkhali@outlook.com</li>
+				<li>Mob no-8171431855</li>
+			</div>
+		
+		<div class= "section" id="4">
+			<span class = "name">Aditya Uniyal</span>
+			<span class ="border"></span>
+			 <li> Computer Science Student</li>
+				<li>E-mail-aditya.uniyal03@gmail.com</li>
+				<li>Mob no-7409106800</li>
+		</div>
+
+	</div>
+
+	</body>
+
+{% endblock %}

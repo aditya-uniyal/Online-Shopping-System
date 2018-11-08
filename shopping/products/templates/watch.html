@@ -1,0 +1,48 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>details </title>
+<link rel="stylesheet"  href="{% static 'css/productstyle.css' %}">
+</head>
+<body>
+	 
+	<div class="card">
+		<div class = "top-section">
+			<img id="image-container" src = "{% static 'img/watch/1.jpg' %}" alt= " ">
+		<div class ="nav">
+			<img onclick="change_img(this)" src="{% static 'img/watch/1.jpg' %}" alt="">
+			<img onclick="change_img(this)" src="{% static 'img/watch/2.jpg' %}" alt="">
+			<img onclick="change_img(this)" src="{% static 'img/watch/3.jpg' %}" alt="">
+			<img onclick="change_img(this)" src="{% static 'img/watch/4.jpg' %}" alt="">
+			<img onclick="change_img(this)" src="{% static 'img/watch/5.jpg' %}" alt="">
+			
+	
+		
+		</div>
+		<div class = "price">₹2999</div>
+	</div>
+
+	<div class="product-info">
+		<div class="name">men watch</div>
+		<div class="dis"><li>Style: Round | Lens Color: Black | Frame Color: Gold</li>
+<li>Alloy Frame | Acetate Lens | Polarized | 100% Protection Against Harmful UVA/UVB Ray</li>
+<li>Lens Height: 46mm | Width: 46mm | Bridge: 19mm | Temple: 135mm | Total width: 135mm</li>
+<li>HIGH QUALITY MATERIALS- Unbreakable metal frame, fashion flat lenses, soft silicone/Metal nose pads, solid metal hinges, exquisite temples, all the details ensure you a perfect performance..</li>
+<li>It is the perfect choice for outdoor activities such as walking, driving, shopping, travelling, taking photos, and is suitable as high fashion accessory and daily wear all year round.Most of our sunglasses are suitable for all kind of face shapes.</li></div>
+		<a class="btn" href = "#">Add to Cart</a>
+	</div>
+</div>
+<script type = "text/javascript">
+	var container = document.getElementById("image-container")
+	function change_img(image){
+
+		container.src = image.src;
+	}
+</script>
+
+
+</body>
+</html>
